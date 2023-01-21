@@ -1,0 +1,145 @@
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 92px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    font-family: 'Sofia Sans', 'sans-serif';
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo a {
+    color: black;
+}
+
+.second-logo {
+    display: none;
+}
+
+.main-navigation {
+    display: flex;
+}
+
+.link {
+    width: 120px;
+    height: 91px;
+    text-align: center;
+    line-height: 92px;
+    font-size: 18px;
+    cursor: pointer;
+    color: grey;
+    transition: 0.5s;
+}
+
+.link.active {
+    border-bottom: 2px solid #10A37F;
+    background-color: #10a37e23;
+    color: black;
+}
+
+.link:hover {
+    color: black;
+    background-color: rgb(233, 233, 233);
+}
+
+.menu, .close {
+    display: none;
+}
+
+@media screen and (max-width: 769px) {
+    .navbar {
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    .second-logo {
+        height: 92px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        border-bottom: 1px solid rgb(231, 231, 231);
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        margin-right: 20px;
+    }
+
+    .link {
+        width: 90%;
+        text-align: left;
+        padding-left: 24px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        height: 72px;
+        line-height: 72px;
+    }
+
+    .main-navigation {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 60%;
+        height: 100vh;
+        z-index: 999;
+        opacity: 0;
+		visibility: hidden;
+		transform: translatex(-100%);
+    }
+
+    .main-navigation.active {
+        opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		transition: 0.3s;
+    }
+
+    .menu, .close {
+        display: initial;
+        cursor: pointer;
+        width: 18px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        margin-right: 10px;
+    }
+
+    .main-navigation {
+        width: 90%;
+    }
+}

@@ -1,0 +1,31 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    background-color: #F7F7F8;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.main {
+    max-width: 620px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.main-title {
+    margin-bottom: 22px;
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        font-size: 1.8rem;
+    }
+
+    .main-container {
+        height: 480px;
+    }
+}

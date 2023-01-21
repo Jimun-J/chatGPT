@@ -1,0 +1,100 @@
+.second-section-container {
+    width: 100%;
+    display: flex;
+    background-color: #EFEFF0;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.second-section {
+    max-width: 1880px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.second-section-title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-section-code {
+    width: 50%;
+    font-size: 18px;
+}
+
+pre {
+    border-radius: 8px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+pre::-webkit-scrollbar {
+    display: none;
+}
+
+code {
+    color: white;
+}
+
+pre, code {
+    white-space: pre-line;
+}
+
+
+/* codex section css */
+.codex-section-container {
+    width: 100%;
+    display: flex;
+    min-height: 480px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.codex-section {
+    max-width: 1480px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.codex-section-left {
+    width: 70%;
+    display: flex;
+}
+
+.codex-section-right {
+    width: 30%;
+    padding: 60px;
+}
+
+.codex-section h1 {
+    margin-bottom: 6px;
+    font-size: 2.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.codex-section h4 {
+    margin-bottom: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.codex-section button {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.codex-example {
+    height: 320px;
+}

@@ -1,0 +1,120 @@
+.chatroom {
+    width: 100%;
+    height: calc(100vh - 92px);
+}
+
+.chatroom-title {
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 20px 60px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Sofia Sans', 'sans-serif';
+}
+
+.chatroom-desc {
+    display: block;
+    font-size: 16px;
+    color: rgb(99, 99, 99);
+    margin-top: 6px;
+}
+
+.chatroom-container {
+    width: 90%;
+    height: calc(100vh - 420px);
+    margin: 20px auto;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    overflow: scroll;
+    background-color: #f3f3f3;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    font-family: 'Sofia Sans', 'sans-serif';
+}
+
+.chatroom-container::-webkit-scrollbar {
+    display: none;
+}
+
+.input-text {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.btn-send {
+    background-color: #10A37F;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 0.1em;
+    margin-left: 0;
+}
+
+.btn-refresh {
+    color: white;
+    border-radius: 5px;
+    margin-left: 0;
+    width: 41px;
+    height: 41px;
+    transform: translateY(7px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-refresh img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.chat {
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    display: flex;
+    gap: 10px;
+}
+
+.chat.ai {
+    background-color:#e0e0e0;
+}
+
+.chat.ai.no-display {
+    display: none;
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background: #5436DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile.ai {
+    background-color: #10A37F;
+}
+
+.message {
+    flex: 1;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .chatroom-title {
+        padding: 20px;
+    }
+
+    .btn-send {
+        font-size: 13px;
+    }
+}
