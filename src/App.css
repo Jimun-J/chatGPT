@@ -39,8 +39,16 @@ textarea {
     color: white;
 }
 
+.btn-primary a {
+    color: white;
+}
+
 .btn-secondary {
     background-color: rgb(211, 211, 211);
+}
+
+.btn-secondary a {
+    color: black;
 }
 
 button:hover {
