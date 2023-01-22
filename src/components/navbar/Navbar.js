@@ -9,8 +9,6 @@ const Navbar = () => {
     const [clicked, setClicked] = useState(false);
     const [width, setWidth] = useState(0);
 
-    console.log(location.pathname)
-
     useEffect(() => {
         const handleResize = () => {
             setWidth(window.innerWidth);

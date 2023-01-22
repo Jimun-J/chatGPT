@@ -174,7 +174,7 @@ const Dalle = () => {
                     <div className="dalle-gallery-image-container">
                         <div className="margin-bottom-10px">DALL-E 2</div>
                         <div className="dalle-gallery-image">
-                            <img src={currentImage} alt="image-gallery" />
+                            <img src={currentImage} alt="gallery" />
                         </div>
                     </div>
                 </div>
