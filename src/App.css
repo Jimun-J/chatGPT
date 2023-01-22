@@ -53,6 +53,6 @@ a {
 
 @media screen and (max-width: 400px) {
     button {
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
 }

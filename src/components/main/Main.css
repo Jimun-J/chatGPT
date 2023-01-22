@@ -29,3 +29,9 @@
         height: 480px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .main {
+        text-align: left;
+    }
+}
