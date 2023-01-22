@@ -23,8 +23,8 @@ const Home = () => {
               <span style={{ color: "grey", fontSize: "0.8em" }}>Begin building apps with a simple API call</span>
             </div>
             <div>
-              <button className="btn-primary">Get Started</button>
-              <button className="btn-secondary">Read Documentation</button>
+              <button className="btn-primary"><a href="https://beta.openai.com/signup" target="_blank" rel="noreferrer">Get Started</a></button>
+              <button className="btn-secondary"><a href="https://beta.openai.com/docs/introduction" target="_blank" rel="noreferrer">Read Documentation</a></button>
             </div>
           </div>
           <div className="second-section-code">
@@ -61,21 +61,21 @@ const Home = () => {
             <div className="desc">
               <h1>Codex</h1>
               <h4>The Codex is capable in Python and proficient in over a dozen languages including JavaScript, Go, Perl, PHP, Ruby, Swift, TypeScript, SQL, and even Shell.</h4>
-              <button className="btn-primary"><Link to="/codex" style={{ color: 'white'}}>Playground</Link></button>
+              <button className="btn-primary"><Link to="/codex" style={{ color: 'white' }}>Playground</Link></button>
             </div>
           </div>
           <div className="item-c">
             <div className="desc">
               <h1>Davinci</h1>
               <h4>The model generates a text completion that attemps to match whatever context or pattern you gave it.</h4>
-              <button className="btn-secondary"><Link to="/davinci" style={{ color: 'black'}}>Playground</Link></button>
+              <button className="btn-secondary"><Link to="/davinci" style={{ color: 'black' }}>Playground</Link></button>
             </div>
           </div>
           <div className="item-d">
             <pre className="code-example-container">
               <div className="prompt">
                 Translate this into French: Where can I find a bookstore?
-                <br/><br/>
+                <br /><br />
               </div>
               <div className="prompt-answer" style={{ fontWeight: 'bold' }}>
                 Où puis-je trouver un magasin de livres?

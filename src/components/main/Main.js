@@ -28,8 +28,8 @@ const Main = () => {
                     />
                     to perform a wide variety of tasks
                 </div>
-                <button className="btn-primary">Get Started</button>
-                <button className="btn-secondary">Read Documentation</button>
+                <button className="btn-primary"><a href="https://beta.openai.com/signup" target="_blank" rel="noreferrer">Get Started</a></button>
+                <button className="btn-secondary"><a href="https://beta.openai.com/docs/introduction" target="_blank" rel="noreferrer">Read Documentation</a></button>
             </div>
         </div>
     )
